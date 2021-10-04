@@ -14,7 +14,8 @@
         android:layout_weight="0"
         android:gravity="center"
         android:text="Temperatur-Rechner"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,18 +26,19 @@
         <TextView
             android:id="@+id/tvCelsius"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="°C" />
+            android:text="°C"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edTemperature_C"
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
             android:ems="10"
+            android:gravity="center"
             android:inputType="number" />
     </LinearLayout>
 
@@ -48,19 +50,20 @@
 
         <TextView
             android:id="@+id/tvKelvin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="°K" />
+            android:text="K"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/edTemperature_K"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
+            android:gravity="center"
             android:inputType="number" />
     </LinearLayout>
 
@@ -72,19 +75,20 @@
 
         <TextView
             android:id="@+id/tvFahrenheit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="°F" />
+            android:text="°F"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/edTemperature_F"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
+            android:gravity="center"
             android:inputType="number" />
     </LinearLayout>
 </LinearLayout>
