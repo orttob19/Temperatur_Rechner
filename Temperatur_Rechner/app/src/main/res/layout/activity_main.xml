@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/tvTempKelvin"
+                    android:id="@+id/tvKelvin"
                     android:layout_width="60dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/tvTempFahrenheit"
+                    android:id="@+id/tvFahrenheit"
                     android:layout_width="60dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
