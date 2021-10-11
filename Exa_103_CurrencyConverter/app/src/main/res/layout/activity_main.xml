@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvTop"
@@ -67,7 +67,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Switch
@@ -87,6 +87,13 @@
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
 
 </LinearLayout>

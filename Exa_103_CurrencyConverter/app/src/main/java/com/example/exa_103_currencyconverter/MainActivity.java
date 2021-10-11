@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tvTop, tvCurrency1, tvCurrency2, tvOutput;
     private ImageButton btSwap;
+    private Button btExit;
     private EditText edInput;
     private boolean eurInUsd = true;
     private float currency1Val = 1.0f, currency2Val = 0.0f;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         edInput = (EditText) findViewById(R.id.edInput);
         sNewCourse = (Switch) findViewById(R.id.sNewCourse);
         enNewCourse = (EditText) findViewById(R.id.enNewCourse);
+        btExit = (Button) findViewById(R.id.btExit);
 
         convertAndUpdate();
         enNewCourse.setEnabled(false);
@@ -106,6 +108,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         enNewCourse.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -167,4 +176,6 @@ public class MainActivity extends AppCompatActivity {
             course = getFloat(enNewCourse);
         }
     }
+
+
 }
