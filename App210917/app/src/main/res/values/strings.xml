@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">MyApp</string>
-    <string name="hello_msg">Hallo %1$s - nice to meet you</string>
-    <string name="finish">finish</string>
-    <string name="reset">reset</string>
-    <string name="str_reset"> </string>
-</resources>

@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Exa_103_CurrencyConverter</string>
-    <string name="USD">USD</string>
-    <string name="EUR">EUR</string>
-    <string name="EUR_1">1 Euro</string>
-    <string name="USD_1">1 US-Dollar</string>
-    <string name="Error_1">Bitte geben sie nur Zahlen ein</string>
-</resources>
