@@ -14,11 +14,14 @@ public class MainActivity extends AppCompatActivity {
     private float resultKelvin;
     private float resultFahrenheit;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tvTempFahrenheit = (TextView) findViewById(R.id.tvTempFahrenheit);
+        tvTempKelvin = (TextView) findViewById(R.id.tvTempKelvin);
+        edCelsius = (EditText) findViewById(R.id.edCelsius);
 
         resultKelvin = ctoK(Float.parseFloat(edCelsius.getText().toString()));
         resultFahrenheit = ctoF(Float.parseFloat(edCelsius.getText().toString()));
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public float ctoK(float temp){
         float kelvin = temp + 273.15f;
-        return temp;
+        return kelvin;
     }
 
     public float ctoF(float temp){
